@@ -17,3 +17,12 @@
     margin: 0;
     padding: 0;
 }
+.btn {
+    color: white;
+    background: black;
+    padding: 7px 6px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-bottom: 9px;
+}
