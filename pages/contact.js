@@ -9,9 +9,7 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(phone, name, email, desc)
         const data = { phone, name, email, desc }
-        console.log('data', data)
         fetch('http://localhost:3000/api/postcontact', {
             method: 'POST',
             headers: {
@@ -21,7 +19,6 @@ const Contact = () => {
         })
             .then(response => response.text())
             .then(data => {
-                console.log('Success:', data);
                 alert("Thanks for contacting us");
                 setphone('')
                 setname('')
